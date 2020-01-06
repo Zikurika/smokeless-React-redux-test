@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
-import App from '../../App';
+import React, { Component } from "react";
+import { AppRegistry } from "react-native";
+import App from "../../App";
+
 export default class Counter extends Component {
   render() {
-    return (
-      <App />
-    );
+    return <App />;
   }
 }
-AppRegistry.registerComponent('Counter', () => Counter);
+AppRegistry.registerComponent("Counter", () => Counter);

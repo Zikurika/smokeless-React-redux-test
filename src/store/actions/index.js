@@ -1,12 +1,11 @@
-export function IncrementScreenOne(){
-  return{
+/*actions*/
+export function IncrementScreenOne() {
+  return {
     type: "IncrementScreenOne"
   };
 }
-export function IncrementScreenTwo(){
-  return{
+export function IncrementScreenTwo() {
+  return {
     type: "IncrementScreenTwo"
   };
 }
-  
-  

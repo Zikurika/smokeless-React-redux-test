@@ -1,19 +1,16 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-
-class pageOne extends Component{
- render(){
-  
-  
-  return (
-    <View style={styles.container}>
-      <Text style={styles.welcome} >
-        this is a screen to make the two screens not always equal :D
-      </Text>
-    </View>
-  );
-};
+class pageOne extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          this is a screen to make the two screens not always equal :D
+        </Text>
+      </View>
+    );
+  }
 }
 const styles = StyleSheet.create({
   container: {
@@ -30,4 +27,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default (pageOne);
+export default pageOne;

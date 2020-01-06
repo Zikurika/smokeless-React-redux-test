@@ -1,26 +1,18 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Actions } from "react-native-router-flux";
-import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import { IncrementScreenOne } from "./store/actions/index";
 
-
-class pageOne extends Component{
- render(){
-  
-  
-  return (
-    <View style={styles.container}>
-      <Text style={styles.welcome} >
-        Screen One
-      </Text>
-      <Text style={styles.welcome} onPress={() => this.props.IncrementScreenOne()}>
-       {this.props.count}
-      </Text>
-    </View>
-  );
-};
+class pageOne extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Screen One</Text>
+        <Text style={styles.welcome}>{this.props.count}</Text>
+      </View>
+    );
+  }
 }
 const styles = StyleSheet.create({
   container: {

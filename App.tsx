@@ -36,12 +36,14 @@ const App = () => {
               key="pageOne"
               component={pageOne}
               title="Screen One"
+              /*this will call the function in the store to increament the first screen */
               onEnter={()=>store.dispatch(IncrementScreenOne())}
             />
             <Scene
               key="pageTwo"
               component={pageTwo}
               title="Screen Two"
+                /*this will call the function in the store to increament the sencond screen */
               onEnter={()=>store.dispatch(IncrementScreenTwo())}
             />
                         <Scene
